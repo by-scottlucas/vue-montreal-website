@@ -17,6 +17,6 @@ onMounted(() => {
 
 <style scoped>
 .page-content {
-  @apply bg-gray-100 p-4;
+  @apply bg-gray-100 lg:p-4 h-auto;
 }
 </style>
