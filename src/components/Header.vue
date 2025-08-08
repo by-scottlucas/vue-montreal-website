@@ -1,26 +1,3 @@
-<script setup>
-import { defineComponent, ref } from "vue";
-import { Menu } from "lucide-vue-next";
-import logo from "../assets/montreal-logo.png";
-
-defineComponent({
-  name: "HeaderComponent",
-});
-
-const menuIsOpen = ref(false);
-
-const navLinks = [
-  { title: "Home", link: "#" },
-  { title: "Institucional", link: "#" },
-  { title: "Empreendimentos", link: "#" },
-  { title: "Contato", link: "#" },
-];
-
-function toggleMenu() {
-  menuIsOpen.value = !menuIsOpen.value;
-}
-</script>
-
 <template>
   <nav class="header">
     <a href="#" class="header__brand">
@@ -71,6 +48,29 @@ function toggleMenu() {
   </nav>
 </template>
 
+<script setup>
+import { defineComponent, ref } from "vue";
+import { Menu } from "lucide-vue-next";
+import logo from "../assets/montreal-logo.png";
+
+defineComponent({
+  name: "HeaderComponent",
+});
+
+const menuIsOpen = ref(false);
+
+const navLinks = [
+  { title: "Home", link: "#" },
+  { title: "Institucional", link: "#" },
+  { title: "Empreendimentos", link: "#" },
+  { title: "Contato", link: "#" },
+];
+
+function toggleMenu() {
+  menuIsOpen.value = !menuIsOpen.value;
+}
+</script>
+
 <style scoped>
 .header {
   @apply bg-white flex flex-wrap lg:text-start items-center justify-between mx-auto p-4 xl:px-12;
@@ -117,6 +117,6 @@ function toggleMenu() {
 }
 
 .header__link--contact {
-  @apply text-white rounded-full px-7 bg-blue-600 hover:bg-blue-700;
+  @apply lg:text-white lg:rounded-full lg:px-7 lg:bg-blue-600 lg:hover:bg-blue-700;
 }
 </style>
