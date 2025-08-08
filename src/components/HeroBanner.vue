@@ -58,7 +58,7 @@ const cards = [
 
 <style scoped>
 .hero-banner {
-  @apply lg:pt-4;
+  @apply lg:pt-4 min-h-max;
 }
 
 .hero-banner__image {

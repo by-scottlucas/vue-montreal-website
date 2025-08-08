@@ -51,7 +51,7 @@ export default {
 
 <style scoped>
 .card {
-  @apply bg-white rounded-md shadow-md text-center gap-12 flex flex-col justify-between w-[190px] lg:w-[300px] p-2 lg:px-5 lg:py-8;
+  @apply bg-white rounded-md shadow-md text-center md:gap-8 lg:gap-12 flex flex-col justify-between w-[190px] md:w-[210px] lg:w-[300px] lg:h-[350px] p-2 md:px-3 md:py-5 lg:px-5;
 }
 
 .card__icon {

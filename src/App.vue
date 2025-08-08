@@ -2,6 +2,7 @@
   <Header />
   <main class="page-content">
     <HeroBanner />
+    <Projects />
   </main>
 </template>
 
@@ -9,6 +10,7 @@
 import { onMounted } from "vue";
 import Header from "./components/Header.vue";
 import HeroBanner from "./components/HeroBanner.vue";
+import Projects from "./components/Projects.vue";
 
 onMounted(() => {
   document.title = "Montreal Construtora | Home";
