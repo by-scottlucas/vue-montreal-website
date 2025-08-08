@@ -4,6 +4,7 @@
     <HeroBanner />
     <Projects />
     <InfoCards />
+    <CTABanner />
   </main>
 </template>
 
@@ -13,6 +14,7 @@ import Header from "./components/Header.vue";
 import HeroBanner from "./components/HeroBanner.vue";
 import Projects from "./components/Projects.vue";
 import InfoCards from "./components/InfoCards.vue";
+import CTABanner from "./components/CTABanner.vue";
 
 onMounted(() => {
   document.title = "Montreal Construtora | Home";
