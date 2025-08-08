@@ -1,17 +1,17 @@
 <template>
-  <section class="mt-32 px-4 md:px-10 lg:px-16 w-full">
-    <div class="mb-4 md:mb-8">
-      <div class="h-1 w-28 bg-black mb-2 md:mb-4"></div>
-      <h2 class="text-2xl md:text-3xl font-bold">Projetos em Destaque</h2>
+  <section class="projects">
+    <div class="projects__header">
+      <div class="projects__divider"></div>
+      <h2 class="projects__title">Projetos em Destaque</h2>
     </div>
 
-    <div class="grid gap-6 grid-cols-2 md:grid-cols-3">
+    <div class="projects__grid">
       <img
         v-for="(project, index) in projects"
         :key="index"
         :src="project.image"
         :alt="project.alt"
-        class="w-full object-cover"
+        class="projects__image"
         loading="lazy"
       />
     </div>
@@ -40,3 +40,29 @@ const projects = [
   { image: project6, alt: "Projeto 6" },
 ];
 </script>
+
+<style scoped>
+.projects {
+  @apply mt-32 px-4 md:px-10 lg:px-16 w-[95%] mx-auto;
+}
+
+.projects__header {
+  @apply mb-4 md:mb-8;
+}
+
+.projects__divider {
+  @apply h-1 w-28 bg-black mb-2 md:mb-4;
+}
+
+.projects__title {
+  @apply text-2xl md:text-3xl font-bold;
+}
+
+.projects__grid {
+  @apply grid gap-6 grid-cols-2 md:grid-cols-3;
+}
+
+.projects__image {
+  @apply w-full object-cover;
+}
+</style>

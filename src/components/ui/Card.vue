@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { Home, Pickaxe, Sparkles } from "lucide-vue-next";
+import { Globe, Home, Pickaxe, Sparkles } from "lucide-vue-next";
 
 export default {
   name: "CardComponent",
@@ -42,6 +42,7 @@ export default {
         home: Home,
         pickaxe: Pickaxe,
         sparkles: Sparkles,
+        globe: Globe
       };
       return iconMap[this.icon] || null;
     },
@@ -51,7 +52,7 @@ export default {
 
 <style scoped>
 .card {
-  @apply bg-white rounded-md shadow-md text-center md:gap-8 lg:gap-12 flex flex-col justify-between w-[190px] md:w-[210px] lg:w-[300px] lg:h-[350px] p-2 md:px-3 md:py-5 lg:px-5;
+  @apply bg-white rounded-md shadow-md text-center md:gap-8 lg:gap-12 flex flex-col justify-between w-full max-h-[350px] px-3 py-5 lg:px-5;
 }
 
 .card__icon {

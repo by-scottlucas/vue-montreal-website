@@ -3,6 +3,7 @@
   <main class="page-content">
     <HeroBanner />
     <Projects />
+    <InfoCards />
   </main>
 </template>
 
@@ -11,6 +12,7 @@ import { onMounted } from "vue";
 import Header from "./components/Header.vue";
 import HeroBanner from "./components/HeroBanner.vue";
 import Projects from "./components/Projects.vue";
+import InfoCards from "./components/InfoCards.vue";
 
 onMounted(() => {
   document.title = "Montreal Construtora | Home";

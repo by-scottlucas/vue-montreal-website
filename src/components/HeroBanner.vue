@@ -58,7 +58,7 @@ const cards = [
 
 <style scoped>
 .hero-banner {
-  @apply lg:pt-4 min-h-max;
+  @apply lg:pt-4 min-h-max w-[95%] mx-auto;
 }
 
 .hero-banner__image {
@@ -82,6 +82,6 @@ const cards = [
 }
 
 .hero-banner__cards {
-  @apply w-full hidden gap-10 md:flex justify-center md:mt-14 lg:mt-20;
+  @apply md:max-w-[84%] lg:max-w-[74%] mx-auto hidden gap-8 md:flex justify-center md:mt-14 lg:mt-20;
 }
 </style>
