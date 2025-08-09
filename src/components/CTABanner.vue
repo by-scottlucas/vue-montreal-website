@@ -41,15 +41,15 @@ import ctaBanner from "../assets/cta-contact-banner.png";
 }
 
 .cta-banner__label {
-  @apply text-white text-sm md:text-lg font-bold mb-3;
+  @apply text-white text-sm md:text-lg font-bold;
 }
 
 .cta-banner__text {
-  @apply text-white text-xl md:text-[40px] md:mb-5 font-medium;
+  @apply text-white text-xl md:text-3xl font-medium;
 }
 
 .cta-banner__button {
-  @apply flex items-center gap-2 mt-4 md:mt-8 text-white font-medium bg-blue-600 hover:bg-blue-700 py-2 px-6 rounded-md w-max transition-all ease-in-out duration-300;
+  @apply flex items-center gap-2 mt-4 text-white font-medium bg-blue-600 hover:bg-blue-700 py-2 px-6 rounded-md w-max transition-all ease-in-out duration-300;
 }
 
 .cta-banner__icon {

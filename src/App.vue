@@ -1,10 +1,11 @@
 <template>
-  <Header />
   <main class="page-content">
+    <Header />
     <HeroBanner />
     <Projects />
     <InfoCards />
     <CTABanner />
+    <Footer />
   </main>
 </template>
 
@@ -15,6 +16,7 @@ import HeroBanner from "./components/HeroBanner.vue";
 import Projects from "./components/Projects.vue";
 import InfoCards from "./components/InfoCards.vue";
 import CTABanner from "./components/CTABanner.vue";
+import Footer from "./components/Footer.vue";
 
 onMounted(() => {
   document.title = "Montreal Construtora | Home";
@@ -23,6 +25,6 @@ onMounted(() => {
 
 <style scoped>
 .page-content {
-  @apply bg-gray-100 lg:p-4 h-auto;
+  @apply bg-gray-100 h-auto;
 }
 </style>
